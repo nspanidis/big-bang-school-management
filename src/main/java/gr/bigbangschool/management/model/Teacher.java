@@ -2,6 +2,13 @@ package gr.bigbangschool.management.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents a teacher registered in the school management system.
+ *
+ * A teacher is associated with a user account and can be assigned
+ * to classrooms and courses. Teachers can access and manage
+ * educational information according to their assigned role.
+ */
 @Entity
 @Table(name = "teachers")
 public class Teacher {

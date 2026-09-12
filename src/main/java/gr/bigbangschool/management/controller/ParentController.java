@@ -8,6 +8,12 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+/**
+ * REST controller for managing parent profiles.
+ *
+ * Provides endpoints for creating, retrieving,
+ * updating and deleting parent records.
+ */
 @RestController
 @RequestMapping("/api/parents")
 public class ParentController {

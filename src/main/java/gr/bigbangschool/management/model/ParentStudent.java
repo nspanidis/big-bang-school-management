@@ -2,6 +2,13 @@ package gr.bigbangschool.management.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents the relationship between a parent and a student.
+ *
+ * This entity links parents to their children and allows the system
+ * to determine which student information can be accessed by each
+ * parent account.
+ */
 @Entity
 @Table(
         name = "parent_students",

@@ -2,6 +2,13 @@ package gr.bigbangschool.management.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents a classroom in the school management system.
+ *
+ * A classroom is identified by its name, grade and school year.
+ * It is used to organize students, enrollments, teaching assignments
+ * and other classroom-related school activities.
+ */
 @Entity
 @Table(name = "classrooms")
 public class Classroom {

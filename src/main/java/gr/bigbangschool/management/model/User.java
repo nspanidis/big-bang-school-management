@@ -6,6 +6,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.time.LocalDateTime;
 
+/**
+ * Represents a user account in the school management system.
+ *
+ * A user contains the authentication and authorization information
+ * required to access the application. Each user is assigned a role
+ * such as ADMIN, TEACHER or PARENT, which determines the available
+ * functionality and permissions.
+ */
 @Entity
 @Table(name = "users")
 public class User {

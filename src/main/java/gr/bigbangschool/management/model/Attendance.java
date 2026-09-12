@@ -3,6 +3,13 @@ package gr.bigbangschool.management.model;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 
+/**
+ * Represents a student's attendance record for a specific school day.
+ *
+ * Each attendance record is associated with a student and a date
+ * and stores the student's attendance status, such as PRESENT,
+ * ABSENT or LATE, together with optional notes.
+ */
 @Entity
 @Table(name = "attendance")
 public class Attendance {

@@ -8,6 +8,12 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+/**
+ * REST controller for managing parent-student relationships.
+ *
+ * Provides endpoints for creating, retrieving and deleting
+ * relationships between parents and students.
+ */
 @RestController
 @RequestMapping("/api/parent-students")
 public class ParentStudentController {

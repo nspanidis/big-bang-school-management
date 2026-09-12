@@ -7,6 +7,12 @@ import gr.bigbangschool.management.model.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+/**
+ * Handles user authentication for the application.
+ *
+ * Validates user credentials, checks whether the account is active
+ * and generates a JWT token for successfully authenticated users.
+ */
 @Service
 public class AuthService {
 

@@ -7,6 +7,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing school courses.
+ *
+ * The service handles course creation, retrieval, updates and deletion
+ * and supports the connection of courses with teachers and classrooms
+ * through teaching assignments.
+ */
 @Service
 public class CourseService {
 

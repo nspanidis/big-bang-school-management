@@ -8,6 +8,12 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+/**
+ * REST controller for managing teaching assignments.
+ *
+ * Provides endpoints for creating, retrieving and deleting
+ * assignments that connect teachers, courses and classrooms.
+ */
 @RestController
 @RequestMapping("/api/teaching-assignments")
 public class TeachingAssignmentController {

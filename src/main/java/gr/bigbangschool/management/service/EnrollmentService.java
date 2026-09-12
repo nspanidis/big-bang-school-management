@@ -11,6 +11,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for student classroom enrollments.
+ *
+ * The service manages enrollment creation, updates and deletion
+ * while validating referenced students and classrooms.
+ */
 @Service
 public class EnrollmentService {
 
@@ -36,6 +42,16 @@ public class EnrollmentService {
         return enrollmentRepository.findById(id);
     }
 
+    /**
+     * Creates a new student enrollment.
+     *
+     * The student and classroom must exist. The service also prevents
+     * creation of a duplicate active enrollment for the same student
+     * and classroom.
+     *
+     * @param enrollment the enrollment to create
+     * @return the saved enrollment, or null when validation fails
+     */
     public Enrollment createEnrollment(Enrollment enrollment) {
 
         if (enrollment.getStudent() == null
@@ -80,6 +96,16 @@ public class EnrollmentService {
         return enrollmentRepository.save(enrollment);
     }
 
+    /**
+     * Updates an existing enrollment.
+     *
+     * The referenced student and classroom must exist before
+     * the enrollment can be updated.
+     *
+     * @param id the enrollment identifier
+     * @param updatedEnrollment the new enrollment data
+     * @return the updated enrollment, or null when validation fails
+     */
     public Enrollment updateEnrollment(
             Long id,
             Enrollment updatedEnrollment) {

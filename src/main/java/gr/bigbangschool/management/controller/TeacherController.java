@@ -8,6 +8,12 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+/**
+ * REST controller for managing teacher profiles.
+ *
+ * Provides endpoints for creating, retrieving,
+ * updating and deleting teacher records.
+ */
 @RestController
 @RequestMapping("/api/teachers")
 public class TeacherController {

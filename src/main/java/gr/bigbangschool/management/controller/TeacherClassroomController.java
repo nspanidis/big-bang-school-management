@@ -8,6 +8,12 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+/**
+ * REST controller for managing teacher-classroom relationships.
+ *
+ * Provides endpoints for creating, retrieving and deleting
+ * assignments between teachers and classrooms.
+ */
 @RestController
 @RequestMapping("/api/teacher-classrooms")
 public class TeacherClassroomController {

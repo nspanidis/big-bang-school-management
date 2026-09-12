@@ -20,6 +20,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing the school timetable.
+ *
+ * The service handles timetable entries and provides access
+ * to scheduled lessons. It also supports parent-specific timetable
+ * information based on the classrooms of their linked children.
+ */
 @Service
 public class TimetableService {
 

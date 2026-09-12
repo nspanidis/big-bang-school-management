@@ -2,6 +2,13 @@ package gr.bigbangschool.management.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents a teaching assignment in the school.
+ *
+ * A teaching assignment connects a teacher with a course
+ * and a classroom. It defines which teacher is responsible
+ * for teaching a specific course to a specific classroom.
+ */
 @Entity
 @Table(
         name = "teaching_assignments",

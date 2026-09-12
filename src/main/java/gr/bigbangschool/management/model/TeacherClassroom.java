@@ -2,6 +2,13 @@ package gr.bigbangschool.management.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents the relationship between a teacher and a classroom.
+ *
+ * This entity associates teachers with the classrooms they are
+ * responsible for and supports classroom-based access to
+ * school information.
+ */
 @Entity
 @Table(
         name = "teacher_classrooms",

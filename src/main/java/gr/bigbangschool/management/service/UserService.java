@@ -8,6 +8,13 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing application users.
+ *
+ * The service handles user retrieval, creation, updates and deletion.
+ * It also manages user account data used for authentication,
+ * authorization and role-based access.
+ */
 @Service
 public class UserService {
 

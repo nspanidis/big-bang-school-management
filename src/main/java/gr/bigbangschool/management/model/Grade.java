@@ -4,6 +4,13 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
+/**
+ * Defines the available school grade levels.
+ *
+ * The enum provides a predefined set of grade values that can
+ * be used throughout the application to represent the educational
+ * level of students and classrooms.
+ */
 @Entity
 @Table(name = "grades")
 public class Grade {

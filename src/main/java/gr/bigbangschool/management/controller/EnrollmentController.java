@@ -8,6 +8,13 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * REST controller for managing student enrollments.
+ *
+ * Provides endpoints for creating, retrieving, updating
+ * and deleting enrollments that associate students
+ * with classrooms.
+ */
 @RestController
 @RequestMapping("/api/enrollments")
 public class EnrollmentController {

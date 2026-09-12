@@ -9,6 +9,12 @@ import io.swagger.v3.oas.models.security.SecurityScheme;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Configures the OpenAPI documentation for the REST API.
+ *
+ * Defines the basic API information and enables Swagger UI
+ * to provide interactive documentation for available endpoints.
+ */
 @Configuration
 public class OpenApiConfig {
 

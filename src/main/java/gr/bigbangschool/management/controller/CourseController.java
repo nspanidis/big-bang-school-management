@@ -8,6 +8,12 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+/**
+ * REST controller for managing school courses.
+ *
+ * Provides endpoints for creating, retrieving, updating
+ * and deleting course information.
+ */
 @RestController
 @RequestMapping("/api/courses")
 public class CourseController {

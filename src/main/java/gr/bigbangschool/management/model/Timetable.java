@@ -4,6 +4,13 @@ import jakarta.persistence.*;
 
 import java.time.LocalTime;
 
+/**
+ * Represents a scheduled lesson in the school timetable.
+ *
+ * A timetable entry defines when a teaching assignment takes place,
+ * including the school day, start time and end time. Through the
+ * teaching assignment, it connects a teacher, course and classroom.
+ */
 @Entity
 @Table(name = "timetable")
 public class Timetable {

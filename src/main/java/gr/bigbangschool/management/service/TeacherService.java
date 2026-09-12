@@ -7,6 +7,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing teachers.
+ *
+ * The service handles teacher data and the association between
+ * teacher profiles and their corresponding application user accounts.
+ */
 @Service
 public class TeacherService {
 

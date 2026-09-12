@@ -7,6 +7,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing students.
+ *
+ * The service handles student creation, retrieval, updates and deletion
+ * and validates the student data before interacting with the repository.
+ */
 @Service
 public class StudentService {
 

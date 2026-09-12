@@ -8,6 +8,12 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+/**
+ * REST controller for managing classrooms.
+ *
+ * Provides endpoints for creating, retrieving, updating
+ * and deleting classroom records.
+ */
 @RestController
 @RequestMapping("/api/classrooms")
 public class ClassroomController {

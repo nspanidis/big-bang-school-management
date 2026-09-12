@@ -2,6 +2,13 @@ package gr.bigbangschool.management.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents a course taught in the school.
+ *
+ * A course contains the basic information about a subject
+ * and can be connected to teachers and classrooms through
+ * teaching assignments.
+ */
 @Entity
 @Table(name = "courses")
 public class Course {

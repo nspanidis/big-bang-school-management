@@ -8,6 +8,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * REST controller for managing students.
+ *
+ * Provides endpoints for student creation, retrieval,
+ * updates and deletion.
+ */
 @RestController
 @RequestMapping("/api/students")
 public class StudentController {

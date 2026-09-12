@@ -11,6 +11,12 @@ import gr.bigbangschool.management.repository.StudentRepository;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing parent-student relationships.
+ *
+ * The service links parent profiles with students and supports
+ * parent-specific access to information related to their children.
+ */
 @Service
 public class ParentStudentService {
 

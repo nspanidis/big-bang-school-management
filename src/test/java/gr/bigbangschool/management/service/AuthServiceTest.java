@@ -18,6 +18,12 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+/**
+ * Unit tests for {@link AuthService}.
+ *
+ * Verifies successful authentication as well as login failure
+ * for inactive users and invalid passwords.
+ */
 @ExtendWith(MockitoExtension.class)
 class AuthServiceTest {
 

@@ -18,6 +18,13 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.List;
 
+/**
+ * Configures application security and authorization rules.
+ *
+ * Defines the security filter chain, password encoding strategy
+ * and access permissions for public and protected endpoints.
+ * JWT-based authentication is used for securing REST resources.
+ */
 @Configuration
 public class SecurityConfig {
 

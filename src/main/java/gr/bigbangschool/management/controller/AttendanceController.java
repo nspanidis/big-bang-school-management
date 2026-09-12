@@ -8,6 +8,13 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+/**
+ * REST controller for managing student attendance.
+ *
+ * Provides endpoints for retrieving, creating and deleting
+ * attendance records. It also provides parent-specific access
+ * to attendance information for their linked children.
+ */
 @RestController
 @RequestMapping("/api/attendances")
 public class AttendanceController {

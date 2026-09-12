@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.ResponseEntity;
 
+/**
+ * REST controller responsible for user authentication.
+ *
+ * Exposes endpoints for user login and returns JWT tokens
+ * for successfully authenticated users.
+ */
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {

@@ -2,6 +2,13 @@ package gr.bigbangschool.management.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Represents a parent registered in the school management system.
+ *
+ * A parent is associated with a user account for authentication
+ * and can be linked to one or more students through parent-student
+ * relationships.
+ */
 @Entity
 @Table(name = "parents")
 public class Parent {

@@ -16,6 +16,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for student attendance management.
+ *
+ * The service retrieves, creates and deletes attendance records
+ * and also provides parent-specific attendance information
+ * for the parent's linked children.
+ */
 @Service
 public class AttendanceService {
 
@@ -61,6 +68,13 @@ public class AttendanceService {
                 .toList();
     }
 
+    /**
+     * Retrieves attendance records for all students linked
+     * to the authenticated parent account.
+     *
+     * @param email the email address of the authenticated parent
+     * @return attendance records for the parent's children
+     */
     public List<Attendance> getAttendancesForParent(String email) {
 
         User user = userRepository.findByEmail(email).orElse(null);
@@ -78,6 +92,12 @@ public class AttendanceService {
         return getAttendancesByParentId(parent.getId());
     }
 
+    /**
+     * Creates a new attendance record for an existing student.
+     *
+     * @param attendance the attendance record to create
+     * @return the saved attendance record, or null if the student does not exist
+     */
     public Attendance createAttendance(Attendance attendance) {
 
         Long studentId = attendance.getStudent().getId();

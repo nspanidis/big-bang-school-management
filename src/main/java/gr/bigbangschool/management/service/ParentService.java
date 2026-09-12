@@ -9,6 +9,12 @@ import gr.bigbangschool.management.repository.UserRepository;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing parent records.
+ *
+ * The service manages parent information and the association between
+ * a parent profile and its corresponding application user account.
+ */
 @Service
 public class ParentService {
 

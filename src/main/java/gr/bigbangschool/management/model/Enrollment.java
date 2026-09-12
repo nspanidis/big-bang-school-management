@@ -4,6 +4,14 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
+/**
+ * Represents the enrollment of a student in a classroom.
+ *
+ * An enrollment connects a student with a classroom and stores
+ * information such as the enrollment date and active status.
+ * It is used to track the student's classroom membership
+ * during the school year.
+ */
 @Entity
 @Table(name = "enrollments")
 public class Enrollment {

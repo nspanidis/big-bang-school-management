@@ -8,6 +8,13 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+/**
+ * REST controller for managing the school timetable.
+ *
+ * Provides endpoints for retrieving and managing timetable entries.
+ * It also provides parent-specific access to timetable information
+ * related to their children's classrooms.
+ */
 @RestController
 @RequestMapping("/api/timetables")
 public class TimetableController {

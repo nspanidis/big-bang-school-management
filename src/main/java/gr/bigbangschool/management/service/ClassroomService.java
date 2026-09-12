@@ -7,6 +7,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing classrooms.
+ *
+ * The service handles classroom creation, retrieval, updates and deletion
+ * and supports the organization of students, teachers and school activities.
+ */
 @Service
 public class ClassroomService {
 

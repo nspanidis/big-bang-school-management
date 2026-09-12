@@ -13,6 +13,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing teaching assignments.
+ *
+ * A teaching assignment connects a teacher, a course and a classroom
+ * and defines which teacher is responsible for teaching a specific
+ * subject to a specific class.
+ */
 @Service
 public class TeachingAssignmentService {
 

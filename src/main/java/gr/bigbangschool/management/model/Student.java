@@ -3,6 +3,13 @@ package gr.bigbangschool.management.model;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 
+/**
+ * Represents a student enrolled in the school.
+ *
+ * Stores the student's basic personal information and serves as
+ * the central entity for school-related records such as enrollments,
+ * attendance and parent-student relationships.
+ */
 @Entity
 @Table(name = "students")
 public class Student {

@@ -19,6 +19,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing school announcements.
+ *
+ * The service handles announcement retrieval, creation and deletion
+ * and determines which announcements are visible to parent accounts
+ * based on the classrooms of their children.
+ */
 @Service
 public class AnnouncementService {
 

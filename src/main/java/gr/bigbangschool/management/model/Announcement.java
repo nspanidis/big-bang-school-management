@@ -3,6 +3,13 @@ package gr.bigbangschool.management.model;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+/**
+ * Represents a school announcement.
+ *
+ * An announcement contains information that can be communicated
+ * to members of the school community. It stores the announcement
+ * title, content, creator and the classroom to which it applies.
+ */
 @Entity
 @Table(name = "announcements")
 public class Announcement {

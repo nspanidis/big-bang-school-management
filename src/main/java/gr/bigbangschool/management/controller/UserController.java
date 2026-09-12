@@ -8,6 +8,12 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
+/**
+ * REST controller for managing application users.
+ *
+ * Provides endpoints for creating, retrieving, updating
+ * and deleting user accounts in the system.
+ */
 @RestController
 @RequestMapping("/api/users")
 public class UserController {

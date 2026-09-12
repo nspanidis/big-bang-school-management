@@ -12,6 +12,13 @@ import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
 
+/**
+ * Provides JWT token generation and validation functionality.
+ *
+ * The service creates signed authentication tokens containing
+ * user identity and role information and validates incoming tokens
+ * used to access protected application resources.
+ */
 @Service
 public class JwtService {
 
@@ -25,6 +32,12 @@ public class JwtService {
         );
     }
 
+    /**
+     * Generates a signed JWT token for an authenticated user.
+     *
+     * @param user the authenticated user
+     * @return the generated JWT token
+     */
     public String generateToken(User user) {
 
         long expirationTime = 1000L * 60 * 60 * 24;
@@ -43,6 +56,12 @@ public class JwtService {
                 .compact();
     }
 
+    /**
+     * Extracts the user's email address from a JWT token.
+     *
+     * @param token the JWT token
+     * @return the email stored in the token subject
+     */
     public String extractEmail(String token) {
 
         Claims claims = Jwts.parser()
@@ -54,6 +73,13 @@ public class JwtService {
         return claims.getSubject();
     }
 
+    /**
+     * Validates that a JWT token belongs to the expected user.
+     *
+     * @param token the JWT token to validate
+     * @param email the expected user email
+     * @return true when the token is valid for the given email
+     */
     public boolean isTokenValid(
             String token,
             String email) {

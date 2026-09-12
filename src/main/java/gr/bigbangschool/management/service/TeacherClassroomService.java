@@ -11,6 +11,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Provides business logic for managing teacher-classroom relationships.
+ *
+ * The service associates teachers with classrooms and supports
+ * classroom-based access and responsibility assignments.
+ */
 @Service
 public class TeacherClassroomService {
 

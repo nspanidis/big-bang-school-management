@@ -9,6 +9,13 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * REST controller for managing school announcements.
+ *
+ * Provides endpoints for retrieving, creating and deleting
+ * announcements. It also provides parent-specific access
+ * to announcements related to their children's classrooms.
+ */
 @RestController
 @RequestMapping("/api/announcements")
 public class AnnouncementController {
